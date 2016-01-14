@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1= title
+  form(action = '/editpass' , method = 'post')
+    | Current Password
+    input(type = 'text' , name = 'currpass' , placeholder = 'Enter Name here')
+    br
+    br
+    | New Password
+    input(type = 'newpassword' , name = 'password')
+    br
+    br
+    | Confirm New Password
+    input(type = 'cnewpassword' , name = 'password')
+    br
+    br
+    input(type='submit' , value='Submit')

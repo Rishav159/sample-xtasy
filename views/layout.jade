@@ -1,0 +1,24 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+  ul
+    li
+      a(href="/login")
+          | LOGIN
+    li
+      a(href="/signup")
+          | Sign Up
+    li
+      a(href="/event")
+          | Register for event
+    li
+      a(href="/modify")
+          | Edit
+    li
+      a(href="/logout")
+          | Log Out
+
+    block content

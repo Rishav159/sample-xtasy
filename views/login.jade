@@ -1,0 +1,14 @@
+extends layout
+
+block content
+  h1= title
+  form(action = '/loginuser' , method = 'post')
+    | Username
+    input(type = 'text' , name = 'username' , placeholder = 'Enter Name here')
+    br
+    br
+    | Password
+    input(type = 'password' , name = 'password')
+    br
+    br
+    input(type='submit' , value='Submit')

@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  h1= title
+  form(action = '/adduser' , method = 'post')
+    | Username :
+    input(type = 'text' , name = 'username' , placeholder = 'Enter Name here')
+    br
+    br
+    | Email :
+    input(type = 'text' , name = 'email' , placeholder = 'Enter E-mail here')
+    br
+    br
+    | Password :
+    input(type = 'password' , name = 'confirmpassword')
+    br
+    br
+    | Confirm Password : 
+    input(type = 'password' , name = 'password')
+    br
+    br
+    input(type='submit' , value='Submit')
